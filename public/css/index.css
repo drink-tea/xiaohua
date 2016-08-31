@@ -1,0 +1,26 @@
+#nav {
+    height: 40px;
+    color:red;
+    background: green;
+}
+
+
+#left {
+    width: 686px;
+    color:red;
+    background: yellowgreen;
+    float: left;
+    margin-top:5px;
+    margin-left: 180px;
+
+}
+
+
+#right {
+    width: 302px;
+    color:red;
+    background: deeppink;
+    float: left;
+    margin-left: 5px;
+    margin-top:5px;
+}
