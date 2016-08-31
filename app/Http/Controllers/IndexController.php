@@ -35,7 +35,7 @@ class IndexController extends CommonController
 {
 
     /**
-     * 显示前台用户列表
+     * 主页
      *
      * @return Response
      */
@@ -46,12 +46,66 @@ class IndexController extends CommonController
 
 
 
+    /**
+     * 搞笑
+     *
+     * @return Response
+     */
+    public function getFun()
+    {
+        return view('index.fun');
+    }
+
+    /**
+     * 风景
+     *
+     * @return Response
+     */
+    public function getScenery()
+    {
+        return view('index.scenery');
+    }
 
 
+    /**
+     * 科技
+     *
+     * @return Response
+     */
+    public function getTech()
+    {
+        return view('index.tech');
+    }
+
+    /**
+     * 猎奇
+     *
+     * @return Response
+     */
+    public function getStrange()
+    {
+        return view('index.strange');
+    }
 
 
+    /**
+     * 小动物
+     *
+     * @return Response
+     */
+    public function getPuppy()
+    {
+        return view('index.puppy');
+    }
 
-
-
+    /**
+     * 表情
+     *
+     * @return Response
+     */
+    public function getBiaoqing()
+    {
+        return view('index.biaoqing');
+    }
 
 }

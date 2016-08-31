@@ -8,10 +8,11 @@
 #left {
     width: 686px;
     color:red;
-    background: yellowgreen;
+    background: #FFFFFF;
     float: left;
     margin-top:5px;
     margin-left: 180px;
+    height: 500px;
 
 }
 
@@ -23,4 +24,19 @@
     float: left;
     margin-left: 5px;
     margin-top:5px;
+}
+
+#footer {
+    width: 993px;
+    color:blueviolet;
+    background: wheat;
+    float: left;
+    margin-left: 180px;
+    margin-top:5px;
+}
+
+
+.image-box {
+    margin-top:5px;
+
 }
