@@ -12,5 +12,5 @@
 */
 
 //Route::get('/', 'IndexController');
-//Route::controller('index', 'IndexController');
+Route::controller('index', 'IndexController');
 Route::controller('/', 'IndexController');

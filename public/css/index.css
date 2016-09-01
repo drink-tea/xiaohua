@@ -1,8 +1,42 @@
+
+body
+{
+    background: #F2F2F2;
+}
+
 #nav {
     height: 40px;
-    color:red;
-    background: green;
+    color:papayawhip;
+    background: #464646;
 }
+
+#nav ul {
+    list-style:none;
+    margin-left: 130px;
+}
+
+#nav ul li{
+    float:left;
+    margin-left: 30px;
+    margin-top:10px;
+}
+
+#nav ul li a{
+    color:papayawhip;
+    text-decoration: none;
+}
+
+#nav ul li a:visited {
+    color:papayawhip;
+    text-decoration: none;
+}
+
+
+#nav ul li a:hover {
+    color: #999999;
+    text-decoration: underline;
+}
+
 
 
 #left {
@@ -10,7 +44,7 @@
     color:red;
     background: #FFFFFF;
     float: left;
-    margin-top:5px;
+    margin-top:15px;
     margin-left: 180px;
     height: 500px;
 
@@ -19,11 +53,13 @@
 
 #right {
     width: 302px;
-    color:red;
-    background: deeppink;
+    /*color:red;*/
+    /*background: #FFFFFF;*/
+    background: #F7F7F7;
+
     float: left;
-    margin-left: 5px;
-    margin-top:5px;
+    margin-left: 10px;
+    margin-top:15px;
 }
 
 #footer {
@@ -32,11 +68,31 @@
     background: wheat;
     float: left;
     margin-left: 180px;
-    margin-top:5px;
+    margin-top:15px;
 }
 
 
 .image-box {
-    margin-top:5px;
+    margin-top:15px;
+}
+
+#post {
+    /*background: #F7F7F7;*/
+    background: #FFFFFF;
+
+}
+
+#hot-tag {
+    margin-top:15px;
+    /*background: #F7F7F7;*/
+    background: #FFFFFF;
+
+}
+
+#subscribe {
+    margin-top:15px;
+    /*background: #F7F7F7;*/
+    background: #FFFFFF;
+
 
 }

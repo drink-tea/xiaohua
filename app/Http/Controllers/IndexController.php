@@ -53,6 +53,7 @@ class IndexController extends CommonController
      */
     public function getFun()
     {
+        dd(1);
         return view('index.fun');
     }
 
