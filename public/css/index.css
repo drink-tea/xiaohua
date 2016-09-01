@@ -75,6 +75,8 @@ body
 
 .image-box {
     margin-top:15px;
+    background: #F5F5F5;
+
 }
 
 #post {
@@ -101,9 +103,9 @@ body
     top:0;
 }
 
+
 #recommend {
 }
-
 
 #recommend .recommend-con {
     float:left;
@@ -112,5 +114,4 @@ body
     margin-left: 10px;
     margin-top: 10px;
     height:200px;
-
 }

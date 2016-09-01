@@ -39,7 +39,7 @@
         <div class="image-title">
             这是一个测试的图片
         </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
     </div>
     <div class="image-box">
         <div class="image-title">

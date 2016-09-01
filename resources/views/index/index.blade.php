@@ -57,7 +57,25 @@
         <div class="image-title">
             <a href="{{url('index/detail?id=1')}}">这是一个测试的图片</a>
         </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
     </div>
     <div class="image-box">
         <div class="image-title">
@@ -69,43 +87,25 @@
         <div class="image-title">
             这是一个测试的图片
         </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
     </div>
     <div class="image-box">
         <div class="image-title">
             这是一个测试的图片
         </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
     </div>
     <div class="image-box">
         <div class="image-title">
             这是一个测试的图片
         </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
     </div>
     <div class="image-box">
         <div class="image-title">
             这是一个测试的图片
         </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
     </div>
     <div id="paginate">
     </div>
