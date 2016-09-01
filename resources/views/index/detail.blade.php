@@ -47,6 +47,36 @@
         </div>
         <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
     </div>
+
+    <div id="recommend">
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+        <div class="recommend-con">
+            recommend
+        </div>
+    </div>
     <div id="paginate">
     </div>
 </div>

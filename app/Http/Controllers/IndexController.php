@@ -127,6 +127,8 @@ class IndexController extends CommonController
      */
     public function getDetail(Request $request)
     {
+        $data = $request->input();
+
         return view('index.detail');
     }
 

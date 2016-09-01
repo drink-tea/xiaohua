@@ -55,7 +55,7 @@
 <div id="left">
     <div class="image-box">
         <div class="image-title">
-            这是一个测试的图片
+            <a href="{{url('index/detail?id=1')}}">这是一个测试的图片</a>
         </div>
         <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
     </div>

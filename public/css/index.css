@@ -41,8 +41,6 @@ body
     text-decoration: underline;
 }
 
-
-
 #left {
     width: 686px;
     color:red;
@@ -100,5 +98,19 @@ body
 
 .current{
     position:fixed;
-    top:0px;
+    top:0;
+}
+
+#recommend {
+}
+
+
+#recommend .recommend-con {
+    float:left;
+    width:210px;
+    background: wheat;
+    margin-left: 10px;
+    margin-top: 10px;
+    height:200px;
+
 }
