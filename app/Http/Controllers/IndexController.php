@@ -109,6 +109,19 @@ class IndexController extends CommonController
         return view('index.biaoqing');
     }
 
+
+
+    /**
+     * 妹子
+     *
+     * @return Response
+     */
+    public function getGirls(Request $request)
+    {
+        return view('index.girls');
+    }
+
+
     /**
      * 详情页
      */

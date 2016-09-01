@@ -32,9 +32,69 @@
         <li>
             <a href="{{url('index/tech')}}">科技</a>
         </li>
+
+        <li>
+            <a href="{{url('index/tech')}}">美食</a>
+        </li>
+
+        <li>
+            <a href="{{url('index/girls')}}">妹子图</a>
+        </li>
+        <li>
+            <a href="{{url('index/girls')}}">汉子图</a>
+        </li>
+
+        <li>
+            <a href="{{url('index/girls')}}">名画</a>
+        </li>
+
+
+        
     </ul>
 </div>
 <div id="left">
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
+    <div class="image-box">
+        <div class="image-title">
+            这是一个测试的图片
+        </div>
+        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
+    </div>
     <div class="image-box">
         <div class="image-title">
             这是一个测试的图片
