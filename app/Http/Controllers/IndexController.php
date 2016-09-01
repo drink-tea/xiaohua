@@ -39,7 +39,7 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getIndex()
+    public function getIndex(Request $request)
     {
         return view('index.index');
     }
@@ -51,7 +51,7 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getFun()
+    public function getFun(Request $request)
     {
         dd(1);
         return view('index.fun');
@@ -62,7 +62,7 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getScenery()
+    public function getScenery(Request $request)
     {
         return view('index.scenery');
     }
@@ -73,7 +73,7 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getTech()
+    public function getTech(Request $request)
     {
         return view('index.tech');
     }
@@ -83,7 +83,7 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getStrange()
+    public function getStrange(Request $request)
     {
         return view('index.strange');
     }
@@ -94,7 +94,7 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getPuppy()
+    public function getPuppy(Request $request)
     {
         return view('index.puppy');
     }
@@ -104,9 +104,17 @@ class IndexController extends CommonController
      *
      * @return Response
      */
-    public function getBiaoqing()
+    public function getBiaoqing(Request $request)
     {
         return view('index.biaoqing');
+    }
+
+    /**
+     * 详情页
+     */
+    public function getDetail(Request $request)
+    {
+        return view('index.detail');
     }
 
 }
