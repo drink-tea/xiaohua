@@ -62,7 +62,7 @@
         <div class="image-title">
             <a href="{{url('index/detail?id=1')}}">{{$v->title}}</a>
         </div>
-        <img src="{{getImage($v->path,'','',0)}}" width="400px" />
+        <img src="{{getImage($v->path,'activity','',0)}}" width="400px" />
     </div>
     @endforeach
     <div id="paginate">

@@ -735,12 +735,10 @@ function getImage($filename, $type = 'avatar', $size = 'large', $large_thumb = 1
     if (is_numeric($filename)) {
         return URL::asset('/') . ($size == 'large' ? "images/default/avator-xl.png" : "images/default/avator-m.png");
     }
-
     $pathInfo = pathinfo($filename);
     $wjtrUrl = config('system.wjtrUrl');
 
     $url = $wjtrUrl . $pathInfo ['dirname'] . ($large_thumb == 1 ? "/_" . $size : "") . "/" . $pathInfo ['basename'];
-//    print_r($url);exit;
 
     return $url;
 }

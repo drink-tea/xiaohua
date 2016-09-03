@@ -57,6 +57,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'fun')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -71,6 +72,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'scenery')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -86,6 +88,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'tech')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -100,6 +103,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'strange')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -115,6 +119,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'puppy')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -129,6 +134,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'biaoqing')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -145,6 +151,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'girls')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -160,6 +167,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'food')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -176,6 +184,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'man')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -193,6 +202,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'painting')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -209,6 +219,7 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'sport')
+            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
