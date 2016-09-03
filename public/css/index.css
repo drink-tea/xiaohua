@@ -19,6 +19,17 @@ body
     bottom:20px;
 }
 
+
+#paginate ul {
+    list-style:none;
+}
+
+#paginate ul li{
+    float:left;
+    margin-left: 10px;
+    margin-bottom:20px;
+}
+
 #nav ul li{
     float:left;
     margin-left: 30px;
@@ -74,9 +85,16 @@ body
 
 
 .image-box {
-    margin-top:15px;
     background: #F5F5F5;
+    border:1px solid #DDDDDD;
+}
 
+
+.hr {
+    border:1px #DDDDDD solid; }
+
+.top15 {
+    margin-top:15px;
 }
 
 #post {
@@ -115,3 +133,5 @@ body
     margin-top: 10px;
     height:200px;
 }
+
+

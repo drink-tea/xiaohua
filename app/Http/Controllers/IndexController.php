@@ -41,7 +41,7 @@ class IndexController extends CommonController
      */
     public function getIndex(Request $request)
     {
-        $lists = DB::table('image')->paginate();
+        $lists = DB::table('image')->paginate(10);
 
         return view('index.index')->with('lists', $lists);
     }
