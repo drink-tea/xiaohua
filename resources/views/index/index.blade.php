@@ -48,6 +48,10 @@
             <a href="{{url('index/girls')}}">名画</a>
         </li>
 
+        <li>
+            <a href="{{url('index/sport')}}">体育</a>
+        </li>
+
 
         
     </ul>
