@@ -54,8 +54,11 @@ class IndexController extends CommonController
      */
     public function getFun(Request $request)
     {
-        dd(1);
-        return view('index.fun');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'fun')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
     /**
@@ -65,7 +68,11 @@ class IndexController extends CommonController
      */
     public function getScenery(Request $request)
     {
-        return view('index.scenery');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'scenery')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
 
@@ -76,7 +83,11 @@ class IndexController extends CommonController
      */
     public function getTech(Request $request)
     {
-        return view('index.tech');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'tech')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
     /**
@@ -86,7 +97,11 @@ class IndexController extends CommonController
      */
     public function getStrange(Request $request)
     {
-        return view('index.strange');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'strange')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
 
@@ -97,7 +112,11 @@ class IndexController extends CommonController
      */
     public function getPuppy(Request $request)
     {
-        return view('index.puppy');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'puppy')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
     /**
@@ -107,7 +126,11 @@ class IndexController extends CommonController
      */
     public function getBiaoqing(Request $request)
     {
-        return view('index.biaoqing');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'biaoqing')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
 
@@ -119,7 +142,75 @@ class IndexController extends CommonController
      */
     public function getGirls(Request $request)
     {
-        return view('index.girls');
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'girls')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
+    }
+
+
+    /**
+     * 美食
+     *
+     * @return Response
+     */
+    public function getFood(Request $request)
+    {
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'food')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
+    }
+
+
+
+    /**
+     * 汉子
+     *
+     * @return Response
+     */
+    public function getMan(Request $request)
+    {
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'man')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
+    }
+
+
+
+
+    /**
+     * 名画
+     *
+     * @return Response
+     */
+    public function getPainting(Request $request)
+    {
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'painting')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
+    }
+
+
+
+    /**
+     * 体育
+     *
+     * @return Response
+     */
+    public function getSport(Request $request)
+    {
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.code', 'sport')
+            ->paginate();
+        return view('index.index')->with('lists', $lists);
     }
 
 

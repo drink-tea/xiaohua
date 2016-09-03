@@ -60,7 +60,7 @@
     @foreach($lists as $k=>$v)
     <div class="image-box">
         <div class="image-title">
-            <a href="{{url('index/detail?id=1')}}">这是一个测试的图片</a>
+            <a href="{{url('index/detail?id=1')}}">{{$v->title}}</a>
         </div>
         <img src="{{getImage($v->path,'','',0)}}" width="400px" />
     </div>

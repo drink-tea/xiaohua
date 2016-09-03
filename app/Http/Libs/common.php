@@ -740,6 +740,7 @@ function getImage($filename, $type = 'avatar', $size = 'large', $large_thumb = 1
     $wjtrUrl = config('system.wjtrUrl');
 
     $url = $wjtrUrl . $pathInfo ['dirname'] . ($large_thumb == 1 ? "/_" . $size : "") . "/" . $pathInfo ['basename'];
+//    print_r($url);exit;
 
     return $url;
 }
