@@ -5,7 +5,7 @@
     <title>首页</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
     <link href="{{URL::asset('/')}}css/index.css" rel="stylesheet" type="text/css" />
-
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <div id="nav">
