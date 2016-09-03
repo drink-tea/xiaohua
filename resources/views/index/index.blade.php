@@ -57,60 +57,14 @@
     </ul>
 </div>
 <div id="left">
+    @foreach($lists as $k=>$v)
     <div class="image-box">
         <div class="image-title">
             <a href="{{url('index/detail?id=1')}}">这是一个测试的图片</a>
         </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
+        <img src="{{getImage($v->path,'','',0)}}" width="400px" />
     </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/1.jpg" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
-    <div class="image-box">
-        <div class="image-title">
-            这是一个测试的图片
-        </div>
-        <img src="{{URL::asset('/')}}image/2.gif" width="400px" />
-    </div>
+    @endforeach
     <div id="paginate">
     </div>
 </div>
