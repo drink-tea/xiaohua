@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{URL::asset('/')}}css/index.css" rel="stylesheet" type="text/css" />
+    <link href="{{URL::asset('/')}}css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 </head>
 <body>
@@ -62,11 +66,14 @@
         <div class="image-title">
             <a href="{{url('index/detail?id=1')}}">{{$v->title}}</a>
         </div>
-        <img src="{{getImage($v->path,'activity','',0)}}" width="400px" />
+        <img src="{{getImage($v->path,'activity','',0)}}" width="500px" />
         <hr class="hr" />
-        <div>
 
+        <div class="thumb">
+            <span class="glyphicon glyphicon-thumbs-up blue large"></span>
+            <span class="glyphicon glyphicon-thumbs-down blue"></span>
         </div>
+
 
     </div>
     @endforeach
@@ -105,5 +112,9 @@
 <div id="footer">
     footer
 </div>
+
+
+<script src="{{URL::asset('/')}}js/jquery.min.css"></script>
+<script src="{{URL::asset('/')}}js/bootstrap.min.css"></script>
 </body>
 </html>

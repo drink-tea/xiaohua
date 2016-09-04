@@ -33,12 +33,13 @@ body
 #nav ul li{
     float:left;
     margin-left: 30px;
-    margin-bottom:20px;
+    margin-top:13px;
 }
 
 #nav ul li a{
     color:papayawhip;
     text-decoration: none;
+    margin-bottom:20px;
 }
 
 #nav ul li a:visited {
@@ -54,12 +55,18 @@ body
 
 #left {
     width: 686px;
-    color:red;
     background: #FFFFFF;
     float: left;
     margin-top:55px;
     margin-left: 180px;
+}
 
+.blue {
+    color: blue;
+}
+
+.thumb {
+    margin-left: 150px;
 }
 
 
