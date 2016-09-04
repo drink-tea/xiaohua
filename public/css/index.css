@@ -61,25 +61,32 @@ body
     margin-left: 180px;
 }
 
-.blue {
-    color: blue;
-}
-
-.thumb {
-    margin-left: 150px;
-}
-
 
 #right {
     width: 302px;
-    /*color:red;*/
-    /*background: #FFFFFF;*/
-    background: #F7F7F7;
-
+    /*background: #F7F7F7;*/
+    background: #FFFFFF;
     float: left;
     margin-left: 10px;
     margin-top:55px;
 }
+
+.blue {
+    color: #464646;
+}
+
+
+.left10 {
+    margin-left: 10px;
+}
+
+.thumb {
+    font-size:25px;
+    margin-left: 150px;
+}
+
+
+
 
 #footer {
     width: 993px;
@@ -98,29 +105,25 @@ body
 
 
 .hr {
-    border:1px #DDDDDD solid; }
+    border:1px #DDDDDD solid;
+}
 
 .top15 {
     margin-top:15px;
 }
 
 #post {
-    /*background: #F7F7F7;*/
-    background: #FFFFFF;
-
+    background: #F7F7F7;
 }
 
 #hot-tag {
     margin-top:15px;
-    /*background: #F7F7F7;*/
-    background: #FFFFFF;
-
+    background: #F7F7F7;
 }
 
 #subscribe {
     margin-top:15px;
-    /*background: #F7F7F7;*/
-    background: #FFFFFF;
+    background: #F7F7F7;
 }
 
 .current{
@@ -142,3 +145,23 @@ body
 }
 
 
+.image-div{
+    margin-top:5px;
+    margin-left:10px;
+    text-align:center;
+}
+
+.image-title{
+    margin-left:10px;
+}
+
+.image-author .image{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    /*overflow:hidden;*/
+}
+.image-author{
+    margin-left: 10px;
+    margin-top: 5px;
+}

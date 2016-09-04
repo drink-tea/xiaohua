@@ -41,7 +41,10 @@ class IndexController extends CommonController
      */
     public function getIndex(Request $request)
     {
-        $lists = DB::table('image')->paginate(10);
+        $lists = DB::table('image')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
+            ->paginate(10);
 
         return view('index.index')->with('lists', $lists);
     }
@@ -56,8 +59,9 @@ class IndexController extends CommonController
     {
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->where('type.code', 'fun')
-            ->select('image.title', 'image.path')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -72,7 +76,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'scenery')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -88,7 +93,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'tech')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -103,7 +109,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'strange')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -119,7 +126,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'puppy')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -134,7 +142,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'biaoqing')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -151,7 +160,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'girls')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -167,7 +177,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'food')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -184,7 +195,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'man')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -202,7 +214,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'painting')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
@@ -219,7 +232,8 @@ class IndexController extends CommonController
         $lists = DB::table('image')
             ->leftJoin('type', 'type.id', '=', 'image.type')
             ->where('type.code', 'sport')
-            ->select('image.title', 'image.path')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate();
         return view('index.index')->with('lists', $lists);
     }
