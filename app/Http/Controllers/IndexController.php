@@ -46,7 +46,10 @@ class IndexController extends CommonController
             ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
             ->paginate(10);
 
-        return view('index.index')->with('lists', $lists);
+
+        $tags = DB::table('tag')->get();
+
+        return view('index.index')->with('lists', $lists)->with('tags', $tags);
     }
 
 

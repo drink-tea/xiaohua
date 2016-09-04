@@ -94,12 +94,14 @@
     </div>
 
     <div id="hot-tag">
-        hot-taghot-taghot-tag
-        hot-taghot-taghot-tag
-        hot-taghot-taghot-tag
-        hot-taghot-taghot-tag
-        hot-taghot-taghot-tag
-        hot-taghot-taghot-tag
+        <span class="glyphicon glyphicon-tags left10 float-left"></span><div class="left10 float-left">热门标签</div>
+        <div class="tags clear">
+            @foreach($tags as $k=>$v)
+                <div class="tag float-left left10">
+                    {{$v->name}}
+                </div>
+            @endforeach
+        </div>
     </div>
 
     <div id="subscribe">
