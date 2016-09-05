@@ -87,6 +87,8 @@
 </div>
 <div id="right">
     <div id="post">
+        <div class="post_title">公告</div>
+        <div class="clear"></div>
         本站长期承接PHP程序开发，以及WordPress二次开发等付费服务
         本站长期承接PHP程序开发，以及WordPress二次开发等付费服务
         本站长期承接PHP程序开发，以及WordPress二次开发等付费服务
@@ -94,22 +96,29 @@
     </div>
 
     <div id="hot-tag">
-        <span class="glyphicon glyphicon-tags left10 float-left"></span><div class="left10 float-left">热门标签</div>
-        <div class="tags clear">
+        <div><span class="glyphicon glyphicon-tags left10 float-left"></span></div>
+        <div class="left10 float-left">热门标签</div>
+        <div class="clear" ></div>
+        <div class="tags ">
             @foreach($tags as $k=>$v)
                 <div class="tag float-left left10">
                     {{$v->name}}
                 </div>
             @endforeach
         </div>
+        <div class="clear" ></div>
     </div>
 
     <div id="subscribe">
-        subscribsubscribesubscribesubscribesub
-        subscribesubscribesubscribesubscribe
-        subscribesubscribesubscribesubscribe
-        subscribesubscribesubscribesubscribe
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="输入关键字搜索">
+            </div>
+            <button type="submit" class="btn btn-default green">搜索</button>
+        </form>
+        <div class="clear" ></div>
     </div>
+
 
 </div>
 <div id="clear">

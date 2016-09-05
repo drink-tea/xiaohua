@@ -62,14 +62,26 @@ body
 }
 
 
+#subscribe {
+    margin-top:10px;
+    /*background: #64B907;*/
+    border:1px solid #DDDDDD;
+}
+
+
 #right {
     width: 302px;
-    /*background: #F7F7F7;*/
     background: #FFFFFF;
     float: left;
     margin-left: 10px;
     margin-top:55px;
 }
+
+.navbar-form .green {
+    color: #464646;
+    background-color: #64B907;
+}
+
 
 .blue {
     color: #464646;
@@ -114,17 +126,18 @@ body
 
 #post {
     background: #F7F7F7;
+    border:1px solid #DDDDDD;
+
 }
 
 #hot-tag {
     margin-top:15px;
     background: #F7F7F7;
+    border:1px solid #DDDDDD;
+
 }
 
-#subscribe {
-    margin-top:15px;
-    background: #F7F7F7;
-}
+
 
 .current{
     position:fixed;
