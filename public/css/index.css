@@ -62,8 +62,8 @@ body
 }
 
 
-#subscribe {
-    margin-top:10px;
+#search {
+    margin-top:25px;
     /*background: #64B907;*/
     border:1px solid #DDDDDD;
 }
@@ -131,7 +131,7 @@ body
 }
 
 #hot-tag {
-    margin-top:15px;
+    margin-top:25px;
     background: #F7F7F7;
     border:1px solid #DDDDDD;
 }
@@ -139,7 +139,7 @@ body
 #right-recommend {
     background: #F7F7F7;
     border:1px solid #DDDDDD;
-    margin-top:15px;
+    margin-top:25px;
 }
 
 

@@ -109,7 +109,7 @@
         <div class="clear" ></div>
     </div>
 
-    <div id="subscribe">
+    <div id="search">
         <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="输入关键字搜索">
