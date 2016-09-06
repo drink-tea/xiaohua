@@ -254,4 +254,19 @@ class IndexController extends CommonController
 
     }
 
+
+
+    public function postSearch(Request $request)
+    {
+        $data = $request->input();
+
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('image.title','like', '%'.$data['keyword'].'%')
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
+            ->paginate();
+        return view('index.index')->with('lists', $lists)->with('tags', $this->tags);
+    }
+
 }

@@ -86,6 +86,10 @@
     </div>
 </div>
 <div id="right">
+
+
+
+
     <div id="post">
         <div class="post_title">公告</div>
         <div class="clear"></div>
@@ -93,6 +97,18 @@
         本站长期承接PHP程序开发，以及WordPress二次开发等付费服务
         本站长期承接PHP程序开发，以及WordPress二次开发等付费服务
         本站长期承接PHP程序开发，以及WordPress二次开发等付费服务
+    </div>
+
+
+    <div id="search">
+        <form action="{{url('index/search')}}" method="post" class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" name="keyword" class="form-control" placeholder="输入关键字搜索">
+            </div>
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <button type="submit" class="btn btn-default green">搜索</button>
+        </form>
+        <div class="clear" ></div>
     </div>
 
     <div id="hot-tag">
@@ -122,15 +138,7 @@
         <div class="clear" ></div>
     </div>
 
-    <div id="search">
-        <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="输入关键字搜索">
-            </div>
-            <button type="submit" class="btn btn-default green">搜索</button>
-        </form>
-        <div class="clear" ></div>
-    </div>
+
 
 
 
