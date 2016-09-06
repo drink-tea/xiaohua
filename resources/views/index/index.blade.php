@@ -137,39 +137,19 @@
         </div>
         <div class="clear" ></div>
     </div>
-
-
-
-
+    
 
     <div id="right-recommend">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            {{--<ol class="carousel-indicators">--}}
-                {{--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>--}}
-                {{--<li data-target="#carousel-example-generic" data-slide-to="1"></li>--}}
-                {{--<li data-target="#carousel-example-generic" data-slide-to="2"></li>--}}
-            {{--</ol>--}}
 
-            <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
-                <div class="item active ">
-                    <a href="http://www.baidu.com">
-                        <img class="item-image" src="{{URL::asset('/')}}image/2.gif"  alt="...">
-                    </a>
-                    {{--<div class="carousel-caption">--}}
-                        {{--...--}}
-                    {{--</div>--}}
-                </div>
-                <div class="item ">
-                    <a href="http://www.baidu.com">
-                        <img class="item-image" src="{{URL::asset('/')}}image/1.jpg" alt="...">
-                    </a>
-
-                    {{--<div class="carousel-caption">--}}
-                        {{--...--}}
-                    {{--</div>--}}
-                </div>
+                    @foreach($sides as $k=>$v)
+                        <div @if($k==0) class="item active"@else class="item "@endif>
+                            <a href="{{url('index/detail?id='.$v->id)}}">
+                                <img class="item-image" src="{{getImage($v->path,'activity','',0)}}"  alt="...">
+                            </a>
+                        </div>
+                    @endforeach
             </div>
 
             <!-- Controls -->
