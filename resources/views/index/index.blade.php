@@ -169,7 +169,28 @@
 <div id="clear">
 </div>
 <div id="footer">
-    footer
+    <div class="about">
+        <span class="about-item">
+            <a href="">意见反馈</a>
+        </span>
+        <span class="about-vertical">
+            |
+        </span>
+        <span class="about-item">
+            <a href="">关于我们</a>
+        </span>
+        <span class="about-vertical">
+            |
+        </span>
+        <span class="about-item">
+            <a href="">联系我们</a>
+        </span>
+        <span class="about-vertical">
+            |
+        </span>        <span class="about-item">
+            <a href="">免责声明</a>
+        </span>
+    </div>
 </div>
 
 

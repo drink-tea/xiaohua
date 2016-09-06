@@ -13,6 +13,33 @@ body
     width:100%;
 }
 
+
+#footer {
+     width:100%;
+     color:white;
+     background: #343434;
+     margin-top:5px;
+     float:left;
+     height:50px;
+    position: relative;
+}
+
+
+#footer .about{
+    margin-left:350px;
+    margin-top:20px;
+
+}
+
+#footer .about .about-item{
+    margin-left:10px;
+}
+
+#footer .about .about-vertical{
+    margin-left:10px;
+}
+
+
 #nav ul {
     list-style:none;
     margin-left: 80px;
@@ -24,10 +51,11 @@ body
     list-style:none;
 }
 
+
+
 #paginate ul li{
     float:left;
     margin-left: 10px;
-    margin-bottom:20px;
 }
 
 #nav ul li{
@@ -98,16 +126,6 @@ body
 }
 
 
-
-
-#footer {
-    width: 993px;
-    color:blueviolet;
-    background: wheat;
-    float: left;
-    margin-left: 180px;
-    margin-top:15px;
-}
 
 
 .image-box {
@@ -190,6 +208,7 @@ body
     border-radius:100%;
     overflow:hidden;
 }
+
 .image-author{
     margin-left: 10px;
     margin-top: 5px;
