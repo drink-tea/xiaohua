@@ -1,38 +1,21 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Models\MyMessage;
-
-use App\Models\Maker;
-
-use App\Models\MakerUser;
-
-use App\Http\Libs\Helper_Huanxin;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\UserInfoRequest;
-use App\Models\RoleApply;
-use App\Models\MakerApply;
-use App\Models\RoleUser;
-use App\Models\User;
-use App\Models\UserCategory;
-use App\Models\UserInfo;
-use App\Models\UserInvestCategory;
-use App\Models\UserProject;
 use \DB;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Crypt;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Database\Query\Builder;
-use App\Models\Zone;
-use App\Models\Category;
-use App\Models\Notice;
-use App\Models\Type;
-use Maatwebsite\Excel\Excel;
-use Mockery\CountValidator\Exact;
 
 class IndexController extends CommonController
 {
+   public $tags = array();
+
+
+    public function __construct()
+    {
+
+        $tags = DB::table('tag')->lists('name','id');
+        $this->tags = $tags;
+    }
 
     /**
      * 主页
@@ -47,9 +30,8 @@ class IndexController extends CommonController
             ->paginate(10);
 
 
-        $tags = DB::table('tag')->get();
 
-        return view('index.index')->with('lists', $lists)->with('tags', $tags);
+        return view('index.index')->with('lists', $lists)->with('tags', $this->tags);
     }
 
 
@@ -250,6 +232,26 @@ class IndexController extends CommonController
         $data = $request->input();
 
         return view('index.detail');
+    }
+
+
+
+
+    /**
+     * 通过标签id获取列表
+     */
+    public function getBytag(Request $request)
+    {
+        $data = $request->input();
+
+        $lists = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('image.tag_id', $data['tag_id'])
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
+            ->paginate();
+        return view('index.index')->with('lists', $lists)->with('tags', $this->tags);
+
     }
 
 }

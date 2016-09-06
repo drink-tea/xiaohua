@@ -101,8 +101,21 @@
         <div class="clear" ></div>
         <div class="tags ">
             @foreach($tags as $k=>$v)
-                <div class="tag float-left left10">
-                    {{$v->name}}
+                <div class="tag float-left left10 top4">
+                    <?php $key = rand(0,4)?>
+                    <a href="{{url('index/bytag?tag_id='.$k)}}"><button type="button"
+                                       @if($key==0)
+                                       class="btn btn-info"
+                                       @elseif($key==1)
+                                       class="btn btn-primary"
+                                        @elseif($key==2)
+                                       class="btn btn-success"
+                                        @elseif($key==3)
+                                       class="btn btn-warning"
+                                        @else
+                                       class="btn btn-danger"
+                                       @endif
+                        >{{$v}}</button></a>
                 </div>
             @endforeach
         </div>
@@ -171,24 +184,25 @@
 <div id="footer">
     <div class="about">
         <span class="about-item">
-            <a href="">意见反馈</a>
+            <a href="{{url('about/feed')}}">意见反馈</a>
         </span>
         <span class="about-vertical">
             |
         </span>
         <span class="about-item">
-            <a href="">关于我们</a>
+            <a href="{{url('about/about')}}">关于我们</a>
         </span>
         <span class="about-vertical">
             |
         </span>
         <span class="about-item">
-            <a href="">联系我们</a>
+            <a href="{{url('about/contact')}}">联系我们</a>
         </span>
         <span class="about-vertical">
             |
-        </span>        <span class="about-item">
-            <a href="">免责声明</a>
+        </span>
+        <span class="about-item">
+            <a href="{{url('about/state')}}">免责声明</a>
         </span>
     </div>
 </div>
