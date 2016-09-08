@@ -126,7 +126,7 @@ body {
 
 .thumb {
     font-size:25px;
-    margin-left: 150px;
+    margin-left: 220px;
 }
 
 
@@ -177,16 +177,27 @@ body {
 #recommend {
     margin-top:10px;
     border:2px solid #DDDDDD;
+    background: #F5F5F5;
+
 }
 
 
 #recommend .recommend-con {
     float:left;
-    background: wheat;
+    /*background: #F5F5F5;*/
     margin-left: 10px;
-    margin-top: 10px;
-    height:200px;
+    margin-bottom:40px;
+    margin-top: 5px;
+    height:210px;
     width:210px;
+
+}
+
+
+
+#recommend .image-rec-title {
+    font-size: large;
+    word-wrap: break-word;
 
 }
 

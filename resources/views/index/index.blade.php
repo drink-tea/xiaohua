@@ -11,7 +11,7 @@
                     <a href="{{url('index/detail?id=1')}}"><h3>{{$v->title}}</h3></a>
                 </div>
                 <div class="image-div">
-                    <img src="{{getImage($v->path,'activity','',0)}}" width="500px" />
+                    <a href="{{url('index/detail?id=1')}}"><img src="{{getImage($v->path,'activity','',0)}}" width="500px" /></a>
                 </div>
                 <hr class="hr" />
                 <div class="thumb">

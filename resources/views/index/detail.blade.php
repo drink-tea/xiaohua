@@ -20,20 +20,23 @@
     </div>
 
     <div id="recommend">
-
         @foreach($recs as $k=>$v)
             <div class="recommend-con">
-                <div class="image-rec-div">
-                    <img src="{{getImage($v->path, 'activity', '', 0)}}" width="210px" height="200px"/>
+                <div class="image-rec-title">
+                    <a href="{{url('index/detail?id=1')}}">{{$v->title}}</a>
                 </div>
+
+                <div class="image-rec-div">
+                    <a href="{{url('index/detail?id=1')}}">
+                        <img src="{{getImage($v->path, 'activity', '', 0)}}" width="210px" height="200px"/>
+                    </a>
+                </div>
+
             </div>
         @endforeach
             <div class="clear" ></div>
-
     </div>
 
-
-    <div id="paginate">
-    </div>
+    <div class="clear" ></div>
 </div>
 @stop
