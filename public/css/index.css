@@ -1,6 +1,5 @@
 
-body
-{
+body {
     background: #F2F2F2;
 }
 
@@ -11,6 +10,7 @@ body
     position:fixed;
     top:0;
     width:100%;
+    z-index:99999;
 }
 
 
@@ -130,8 +130,6 @@ body
 }
 
 
-
-
 .image-box {
     background: #F5F5F5;
     border:1px solid #DDDDDD;
@@ -177,15 +175,19 @@ body
 
 
 #recommend {
+    margin-top:10px;
+    border:2px solid #DDDDDD;
 }
+
 
 #recommend .recommend-con {
     float:left;
-    width:210px;
     background: wheat;
     margin-left: 10px;
     margin-top: 10px;
     height:200px;
+    width:210px;
+
 }
 
 
@@ -194,6 +196,13 @@ body
     margin-left:10px;
     text-align:center;
 }
+
+.image-rec-div{
+    text-align:center;
+    height:200px;
+    width:210px;
+}
+
 
 .image-title{
     margin-left:10px;
@@ -206,6 +215,7 @@ body
 .clear{
     clear:both
 }
+
 .image-author .image{
     width:40px;
     height:40px;

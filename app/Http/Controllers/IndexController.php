@@ -280,8 +280,18 @@ class IndexController extends CommonController
     public function getDetail(Request $request)
     {
         $data = $request->input();
+        $list = Image::getRow(['image.id'=> $data['id']]);
 
-        return view('index.detail');
+        $recs = DB::table('image')
+            ->leftJoin('type', 'type.id', '=', 'image.type')
+            ->where('type.id','<>', $data['id'])
+            ->leftJoin('publisher', 'publisher.id', '=', 'image.publisher_id')
+            ->select('image.title', 'image.path', 'publisher.path as p_path', 'publisher.name')
+            ->take(9)->get();
+//        dd($recs);exit;
+
+        return view('index.detail')->with('list', $list)->with('recs', $recs)
+            ->with('tags', $this->tags)->with('sides', $this->sides);
     }
 
     /**
